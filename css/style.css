@@ -1,0 +1,607 @@
+@import url("../css/fonts.css");
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+.grid {
+  width: 100%;
+  height: auto;
+  position: absolute; }
+  .grid img {
+    z-index: 999; }
+
+.logo {
+  width: 181px;
+  height: 56px;
+  background: url("../img/Waxom.png");
+  margin: 36px 0 0 206px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: absolute; }
+
+header {
+  width: 100%;
+  height: 100vh;
+  background: url("../img/bg photo.png");
+  background-repeat: no-repeat; }
+  header .nav-top {
+    width: 680px;
+    color: #fff;
+    margin: 50px 0 0 605px;
+    position: absolute;
+    font-family: "Montserrat"; }
+    header .nav-top ul > li {
+      display: inline-block;
+      margin: 0 0 0 30px;
+      font-size: 14px; }
+      header .nav-top ul > li:first-child {
+        margin: 0; }
+  header .contaner-slogan {
+    width: 100%;
+    color: #fff;
+    margin-top: 280px;
+    position: absolute;
+    text-align: center; }
+    header .contaner-slogan .slogan {
+      width: 600px;
+      margin: 0 0 0 350px;
+      float: left; }
+      header .contaner-slogan .slogan p {
+        font-family: 'Raleway';
+        font-size: 36px; }
+        header .contaner-slogan .slogan p:last-child {
+          font-family: 'Montserrat';
+          font-weight: 100;
+          font-size: 16px;
+          line-height: 24px;
+          margin-top: 10px; }
+      header .contaner-slogan .slogan h1 {
+        font-family: 'Raleway';
+        font-size: 52px; }
+    header .contaner-slogan .arrow-left {
+      width: 40px;
+      height: 73px;
+      background: url("../img/left.png");
+      float: left;
+      margin: 50px 0 0 100px; }
+      header .contaner-slogan .arrow-left:hover {
+        background: url("../img/left-hover.png");
+        cursor: pointer; }
+    header .contaner-slogan .arrow-right {
+      width: 40px;
+      height: 73px;
+      background: url("../img/right.png");
+      float: right;
+      margin: 50px 100px 0 0; }
+      header .contaner-slogan .arrow-right:hover {
+        background: url("../img/right-hover.png");
+        cursor: pointer; }
+  header button {
+    color: #fff;
+    font-size: 14px;
+    font-family: 'Raleway';
+    font-weight: 900;
+    background: #998675;
+    width: 170px;
+    height: 55px;
+    -webkit-border-radius: 5px;
+            border-radius: 5px;
+    margin: 480px 0 0 700px;
+    position: absolute;
+    display: block;
+    border: none; }
+
+.flex-contaner-1 {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .flex-contaner-1 .box {
+    width: 250px;
+    height: 230px;
+    margin: 20px; }
+    .flex-contaner-1 .box:hover {
+      cursor: pointer; }
+    .flex-contaner-1 .box:hover .line {
+      background: #c7b29c; }
+    .flex-contaner-1 .box:hover h1 {
+      color: #c7b29c; }
+    .flex-contaner-1 .box:hover .icon1 {
+      background: url("../img/icon-hover.svg") no-repeat center; }
+    .flex-contaner-1 .box:hover .icon2 {
+      background: url("../img/icon2-hover.svg") no-repeat center; }
+    .flex-contaner-1 .box:hover .icon3 {
+      background: url("../img/icon3-hover.svg") no-repeat center; }
+    .flex-contaner-1 .box:hover .icon4 {
+      background: url("../img/icon4-hover.svg") no-repeat center; }
+    .flex-contaner-1 .box .icon {
+      width: 100%;
+      height: 50px; }
+    .flex-contaner-1 .box .icon1 {
+      background: url("../img/icon.svg") no-repeat center; }
+    .flex-contaner-1 .box .icon2 {
+      background: url("../img/icon2.svg") no-repeat center; }
+    .flex-contaner-1 .box .icon3 {
+      background: url("../img/icon3.svg") no-repeat center; }
+    .flex-contaner-1 .box .icon4 {
+      background: url("../img/icon4.svg") no-repeat center; }
+    .flex-contaner-1 .box h1 {
+      font-size: 22px;
+      font-family: "Raleway SemiBold";
+      text-align: center;
+      color: #555555;
+      margin-top: 20px; }
+    .flex-contaner-1 .box p {
+      font-size: 14px;
+      font-family: "Montserrat Light";
+      text-align: center;
+      color: #8c8c8c; }
+    .flex-contaner-1 .box .line {
+      background: rgba(140, 140, 140, 0.4);
+      width: 100px;
+      height: 2px;
+      margin: 20px auto; }
+
+.block-template {
+  width: 100%;
+  background: #fbfaf8;
+  text-align: center;
+  margin-top: 50px;
+  padding-top: 50px; }
+  .block-template h1 {
+    font-size: 30px;
+    font-family: "Raleway SemiBold";
+    color: #555555; }
+  .block-template p {
+    font-size: 16px;
+    font-family: "Montserrat Light";
+    color: #8c8c8c; }
+  .block-template .browser-contaner {
+    width: 100%;
+    height: 450px;
+    margin: 30px auto 3px auto; }
+    .block-template .browser-contaner .browser {
+      width: 700px;
+      height: 453px;
+      position: relative;
+      float: left; }
+    .block-template .browser-contaner .browser-1 {
+      background: url("../img/browser-left.png") no-repeat bottom;
+      -webkit-background-size: 100% 100%;
+              background-size: 100%; }
+    .block-template .browser-contaner .browser-2 {
+      background: url("../img/browser-center.png") no-repeat;
+      width: 800px;
+      position: absolute;
+      margin-left: 300px;
+      -webkit-background-size: 100% 100%;
+              background-size: 100%;
+      z-index: 1; }
+    .block-template .browser-contaner .browser-3 {
+      background: url("../img/browser-right.png") no-repeat bottom;
+      -webkit-background-size: 100% 100%;
+              background-size: 100%; }
+
+.mini-block {
+  width: 100%;
+  height: 150px;
+  background: url("../img/Background.png");
+  padding: 20px 0 0 0; }
+  .mini-block h2 {
+    font-size: 28px;
+    font-family: "Raleway";
+    color: #fbfaf8;
+    margin-left: 200px;
+    margin-top: 35px; }
+  .mini-block p {
+    font-size: 18px;
+    font-family: "Montserrat Light";
+    color: #615855;
+    margin-left: 200px; }
+  .mini-block button {
+    width: 170px;
+    height: 50px;
+    background: #998675;
+    font-size: 14px;
+    font-family: "Raleway ExtraBold";
+    color: #fff;
+    -webkit-border-radius: 3px;
+            border-radius: 3px;
+    border: none;
+    float: right;
+    margin: -60px 300px 0 0; }
+
+.block-latest-project {
+  width: 100%; }
+  .block-latest-project h1 {
+    font-size: 30px;
+    font-family: "Raleway SemiBold";
+    color: #555555;
+    margin: 30px; }
+  .block-latest-project p {
+    font-size: 16px;
+    font-family: "Montserrat Light";
+    color: #8c8c8c;
+    margin-bottom: 20px; }
+  .block-latest-project ul {
+    width: 730px;
+    margin: 0 auto; }
+    .block-latest-project ul li {
+      border: 1px solid #ebebeb;
+      -webkit-border-radius: 3px;
+              border-radius: 3px;
+      width: 120px;
+      height: 32px;
+      margin: 10px;
+      font-size: 14px;
+      font-family: "Montserrat Light";
+      color: #8c8c8c;
+      text-align: center;
+      padding-top: 13px;
+      display: inline-block; }
+      .block-latest-project ul li:hover {
+        background: #998675;
+        color: #fff;
+        cursor: pointer; }
+  .block-latest-project .flex-contaner-2 {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: row wrap;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 auto; }
+  .block-latest-project .boxBLP {
+    background: #ccc;
+    width: 370px;
+    height: 325px;
+    margin: 30px;
+    padding: 0; }
+    .block-latest-project .boxBLP:hover .label-text {
+      background: #362f2d;
+      border: 1px solid #362f2d;
+      -webkit-transition: ease-in 0.5s;
+      -o-transition: ease-in 0.5s;
+      transition: ease-in 0.5s; }
+    .block-latest-project .boxBLP:hover .label-text-h3 {
+      color: #e1e0e0;
+      -webkit-transition: ease-in 0.5s;
+      -o-transition: ease-in 0.5s;
+      transition: ease-in 0.5s; }
+    .block-latest-project .boxBLP:hover .label-text-p {
+      color: #b8a58e;
+      -webkit-transition: ease-in 0.5s;
+      -o-transition: ease-in 0.5s;
+      transition: ease-in 0.5s; }
+    .block-latest-project .boxBLP:hover .label-text::after {
+      border-bottom: 10px solid #362f2d;
+      -webkit-transition: ease-in 0.5s;
+      -o-transition: ease-in 0.5s;
+      transition: ease-in 0.5s; }
+  .block-latest-project .photo {
+    width: 100%;
+    height: 235px;
+    -webkit-background-size: 100% 100%;
+            background-size: 100% 100%;
+    background-color: #b8a58e; }
+  .block-latest-project .photo1 {
+    background: url(../img/photo.png) no-repeat; }
+  .block-latest-project .photo2 {
+    background: url(../img/photo2.png) no-repeat; }
+  .block-latest-project .photo3 {
+    background: url(../img/photo3.png) no-repeat; }
+  .block-latest-project .photo4 {
+    background: url(../img/photo4.png) no-repeat; }
+  .block-latest-project .photo5 {
+    background: url(../img/photo5.png) no-repeat; }
+  .block-latest-project .photo6 {
+    background: url(../img/photo6.png) no-repeat; }
+  .block-latest-project .label-text {
+    width: 100%;
+    height: 100px;
+    background: #fbfaf8;
+    position: relative;
+    border: 1px solid #fbfaf8; }
+    .block-latest-project .label-text h3 {
+      font-size: 20px;
+      font-family: "Raleway Medium";
+      color: #c7b299;
+      margin-left: 25px;
+      margin-top: 25px; }
+    .block-latest-project .label-text p {
+      font-size: 14px;
+      font-family: "Montserrat Light";
+      color: #d1d1d1;
+      margin-left: 25px; }
+  .block-latest-project .label-text::before, .block-latest-project .label-text::after {
+    content: '';
+    position: absolute;
+    left: 40px;
+    border: 10px solid transparent; }
+  .block-latest-project .label-text::after {
+    border-bottom: 10px solid #fbfaf8;
+    top: -19px; }
+  .block-latest-project button {
+    width: 170px;
+    height: 50px;
+    background: #c7b299;
+    color: #fff;
+    font-size: 14px;
+    font-family: "Raleway ExtraBold";
+    border: none;
+    -webkit-border-radius: 3px;
+            border-radius: 3px; }
+
+.block-video-presentation {
+  margin-top: 50px;
+  width: 100%;
+  height: 700px;
+  background: url(../img/photo-video-presentation.png);
+  color: #fff;
+  text-align: center;
+  padding-top: 1px; }
+  .block-video-presentation .circle {
+    width: 100px;
+    height: 100px;
+    background: url(../img/circle.png);
+    margin: 210px auto 0 auto; }
+    .block-video-presentation .circle .play {
+      width: 100px;
+      height: 100px;
+      background: url(../img/icon-play.svg) center no-repeat; }
+  .block-video-presentation h1 {
+    font-size: 30px;
+    font-family: "Raleway Medium"; }
+  .block-video-presentation p {
+    font-size: 16px;
+    font-family: "Montserrat Light"; }
+  .block-video-presentation p:last-child {
+    font-size: 14px;
+    font-family: "Montserrat Regular";
+    color: #c7b299;
+    margin-top: 40px; }
+
+.block-ex-mobile-devices {
+  width: 100%;
+  height: 700px;
+  background: #fbfaf8; }
+  .block-ex-mobile-devices .part-1 {
+    width: 50%;
+    height: 700px;
+    background: url("../img/iPhone in hand.png") no-repeat right bottom;
+    float: left; }
+  .block-ex-mobile-devices .part-2 {
+    width: 50%;
+    height: 700px;
+    float: left; }
+    .block-ex-mobile-devices .part-2 h1 {
+      font-size: 30px;
+      font-family: "Montserrat Regular";
+      color: #555555;
+      margin-top: 195px; }
+    .block-ex-mobile-devices .part-2 p {
+      width: 655px;
+      font-size: 16px;
+      font-family: "Montserrat Light";
+      color: #8c8c8c; }
+    .block-ex-mobile-devices .part-2 ul {
+      list-style-type: none;
+      margin: 50px 0 0 100px; }
+      .block-ex-mobile-devices .part-2 ul li {
+        font-size: 16px;
+        font-family: "Montserrat Light";
+        color: #8c8c8c;
+        line-height: 2; }
+      .block-ex-mobile-devices .part-2 ul li::before {
+        content: '';
+        display: inline-block;
+        margin-right: 30px;
+        height: 21px;
+        width: 21px;
+        background-image: url(../img/circle-arrow.svg); }
+
+.numbers {
+  width: 100%;
+  height: 300px;
+  background: url(../img/Background2.png);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .numbers .item {
+    width: 135px;
+    height: 180px;
+    margin: 5px;
+    text-align: center; }
+    .numbers .item .item-img {
+      width: 100%;
+      height: 44px; }
+    .numbers .item .item-img-1 {
+      background: url(../img/icn-1.svg) no-repeat center; }
+    .numbers .item .item-img-2 {
+      background: url(../img/icn-2.svg) no-repeat center; }
+    .numbers .item .item-img-3 {
+      background: url(../img/icn-3.svg) no-repeat center; }
+    .numbers .item .item-img-4 {
+      background: url(../img/icn-4.svg) no-repeat center; }
+    .numbers .item .item-img-5 {
+      background: url(../img/icn-5.svg) no-repeat center; }
+    .numbers .item h3 {
+      font-size: 48px;
+      color: #fff;
+      font-family: "Montserrat"; }
+    .numbers .item p {
+      font-size: 14px;
+      color: #c7b299;
+      font-family: "Montserrat Light"; }
+    .numbers .item .line-new {
+      width: 30px;
+      height: 2px;
+      background: #fff;
+      margin: 27px auto; }
+
+.block-resent-post {
+  width: 100%;
+  height: 700px; }
+  .block-resent-post h1 {
+    font-size: 30px;
+    color: #555555;
+    font-family: "Raleway SamiBold";
+    text-align: center;
+    margin-top: 64px; }
+  .block-resent-post p {
+    font-size: 16px;
+    color: #8c8c8c;
+    font-family: "Montserrat Light";
+    text-align: center;
+    margin-top: 30px; }
+  .block-resent-post .flex-contaner-3 {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: row wrap;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .block-resent-post .flex-contaner-3 .flex-contaner-3-box {
+      width: 370px;
+      height: 400px;
+      margin: 30px 15px; }
+      .block-resent-post .flex-contaner-3 .flex-contaner-3-box:hover .short-description {
+        background: #362f2d; }
+      .block-resent-post .flex-contaner-3 .flex-contaner-3-box .flex-contaner-3-box-img-1 {
+        width: 100%;
+        height: 220px;
+        background: url(../img/photo-1-recent.png); }
+      .block-resent-post .flex-contaner-3 .flex-contaner-3-box .flex-contaner-3-box-img-2 {
+        width: 100%;
+        height: 220px;
+        background: url(../img/photo-2-recent.png); }
+      .block-resent-post .flex-contaner-3 .flex-contaner-3-box .flex-contaner-3-box-img-3 {
+        width: 100%;
+        height: 220px;
+        background: url(../img/photo-3-recent.png); }
+      .block-resent-post .flex-contaner-3 .flex-contaner-3-box .short-description {
+        width: 100%;
+        height: 175px;
+        padding-top: 0.1px; }
+        .block-resent-post .flex-contaner-3 .flex-contaner-3-box .short-description .short-description-h2 {
+          font-size: 20px;
+          font-family: "Raleway Medium";
+          color: #555555;
+          text-align: left;
+          margin: 23px 30px; }
+        .block-resent-post .flex-contaner-3 .flex-contaner-3-box .short-description .short-description-p {
+          font-size: 14px;
+          font-family: "Montserrat Light";
+          color: #8c8c8c;
+          margin: 0 30px 21px 30px;
+          text-align: left; }
+        .block-resent-post .flex-contaner-3 .flex-contaner-3-box .short-description .short-description-a {
+          font-size: 14px;
+          font-family: "Montserrat Light";
+          color: #c7b299;
+          text-decoration: none;
+          text-align: left;
+          margin-left: 30px; }
+      .block-resent-post .flex-contaner-3 .flex-contaner-3-box:hover .short-description-h2 {
+        color: #c7b299; }
+      .block-resent-post .flex-contaner-3 .flex-contaner-3-box:hover .short-description-p {
+        color: #fff; }
+  .block-resent-post .circle-arrow-contaner {
+    width: 80px;
+    height: 22px;
+    margin: 0 auto; }
+    .block-resent-post .circle-arrow-contaner .circle-arrow {
+      width: 22px;
+      height: 22px;
+      float: left;
+      margin: 0 15px 0 0; }
+    .block-resent-post .circle-arrow-contaner .circle-arrow-left {
+      background: url(../img/circle-arrow-left.svg); }
+    .block-resent-post .circle-arrow-contaner .circle-arrow-right {
+      background: url(../img/circle-arrow-right.svg); }
+
+.logos {
+  width: 100%;
+  height: 490px;
+  background: url(../img/Logos.png);
+  -webkit-background-size: 100% 100%;
+          background-size: 100% 100%; }
+
+.pre-footer {
+  width: 100%;
+  height: 510px;
+  background: #191919;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .pre-footer .pre-footer-box {
+    width: 300px;
+    height: 400px;
+    margin: 80px 15px; }
+    .pre-footer .pre-footer-box .logo-2 {
+      margin: 0 50px;
+      position: relative; }
+    .pre-footer .pre-footer-box p {
+      color: #555555;
+      font-family: "Montserrat Light";
+      font-size: 14px;
+      margin: 20px 50px; }
+    .pre-footer .pre-footer-box a {
+      color: #d1d1d1;
+      font-family: "Montserrat Regular";
+      font-size: 14px;
+      margin: 20px 50px;
+      text-decoration: none; }
+    .pre-footer .pre-footer-box h3 {
+      color: #fff;
+      font-family: "Raleway";
+      font-size: 24px; }
