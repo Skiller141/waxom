@@ -1,2 +1,2 @@
-# waxom.github.io
-тыц тыц!
+п»ї# waxom.github.io
+# С‚С‹С† С‚С‹С†!
